@@ -18,7 +18,16 @@ export default {
           panel: '#1a1d24',    // Lighter dark for cards
           border: '#2a2e37'    // Subtle borders
         }
-      }
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(6px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 0.3s ease-out both',
+      },
     },
   },
   plugins: [],
